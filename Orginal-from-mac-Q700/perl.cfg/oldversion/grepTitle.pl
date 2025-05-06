@@ -1,0 +1,1 @@
+# greppar TITLE i en fil			open(CurrFILE,":tjs:front.html");			$f ="45";			read (CurrFILE,$get,$f) ;	if($get=~ m/<TITLE>(.*)<\/TITLE>/) {		$title=$1;} 	else {		$title="undef"}print "$title\n";

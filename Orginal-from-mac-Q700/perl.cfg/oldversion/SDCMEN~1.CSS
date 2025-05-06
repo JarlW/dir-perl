@@ -1,0 +1,39 @@
+/* sdcstyle.css: CSS1 style sheet for SDC internal documentation menys.
+   Tjalle, 23.10.1997  */
+
+
+
+
+<STYLE TYPE="text/css">
+BODY 	{background: #F1F1F1
+		; margin:0}
+H3,B,P,MENU,OL,UL
+	{ font-family: gill, helvetica, sans-serif
+	; font-style: normal
+	; font-variant: normal
+	; font-weight: normal
+	; font-size: 12pt
+	; color: #000000
+	; word-spacing: 3em
+	; text-align: left
+	; margin-left: 0pt
+	; margin-top: 0pt
+
+}
+
+UL	{ margin-left: 0pt
+	; margin-top: 0pt
+	; margin-right: 5pt
+	; margin-bottom: 0pt
+	; font-size: 12pt
+	; font-weight: bold
+	; color: blue
+	; border-width: none none none none
+
+
+A:link { color: blue }          /* unvisited link */
+A:visited { color: blue }        /* visited links */
+A:active { color: red }
+
+ 
+</STYLE>

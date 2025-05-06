@@ -1,0 +1,1 @@
+#PATH$temp = Directory;print $temp;

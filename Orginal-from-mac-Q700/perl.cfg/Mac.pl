@@ -1,0 +1,45 @@
+#Main script for macintosh based dir2toc
+
+print "\nstart-program\n";
+local ($a)='';
+$OS='MAC';
+
+#START OF PARAMETERS!!!
+$rootDir='FATSO:perl:tjs';	
+	#	$rootDir='FATSO:dokumentit:www-stuff';	
+$cfgDir='FATSO:perl:tjs:perl.cfg:table';
+
+
+$a='tableEN';
+	
+# RUN configuration file:
+if ($a eq 'tableEN'){
+	$currLang = 'EN';
+
+	$cfgDir='FATSO:perl:tjs:perl.cfg:table';
+	do ':table:config.pl';
+	}elsif($a eq 'tableSE'){
+		$currLang = 'SE';
+
+	$cfgDir='FATSO:perl:tjs:perl.cfg:table';
+	do ':table:config.pl';
+	}elsif($a eq 'testEN'){
+		$currLang = 'EN';
+
+	$cfgDir='FATSO:perl:tjs:perl.cfg:test';
+	do ':test:config.pl';
+	}elsif($a eq 'testFI'){
+		$currLang = 'FI';
+
+	$cfgDir='FATSO:perl:tjs:perl.cfg:test';
+	do ':test:config.pl';
+	}else{
+
+	$otherLang= 'EN|FI|DE|FR';
+	$cfgDir='FATSO:perl:tjs:perl.cfg:test';
+	do ':test:config.pl';
+	}
+#Run the main script:
+do 'dir2toc.pl';
+
+print "\nEND-program\n";

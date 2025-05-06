@@ -1,0 +1,1 @@
+	$demoTitle = "DEMO TITLE TEXT";$mainTarget = "DEMO TITLE TEXT";	$style ="";	open (STYLE, "defaultstyle\.cfg");	while (<STYLE>){		#read (STYLE,$style,');	$style="$style$_";	}	if($style=~ s/<TITLE>(.*)<\/TITLE>/<TITLE>$demoTitle<\/TITLE>/) {		$Style=$1;} 	if($style=~ s/<BASE TARGET=\"(.*)\">/<BASE TARGET=\"$mainTarget\">/) {		$Style=$1;	} 		print $style;
